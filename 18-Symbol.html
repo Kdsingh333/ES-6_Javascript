@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol</title>
+</head>
+<body>
+    <script>
+        let id1 = Symbol("Hello");
+        let age = Symbol("age");
+        // let id2 = Symbol("Hello");
+
+        // let str1 = "Hello";
+        // let str2 = "Hello";
+        // console.log(id1==id2)
+        // console.log(str1==str2)
+        // // alert(id1.toString());
+        // alert(id1.description);
+        // console.log(typeof id);
+
+        let user = {
+            name : "Kuldeep Singh",
+            class :"Btech"
+            // [age]:25
+        };
+
+        user[age] = 25;
+        user["gender"] = "Male";
+        console.log(user);
+        // for accessing symbol value  we use square bracket
+        // we can not use symbol for in loop 
+        console.log(user[age]);
+
+        console.log(JSON.stringify(user))
+        // It will skip the symbol key value 
+
+    </script> 
+</body>
+</html>
